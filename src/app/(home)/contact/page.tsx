@@ -13,8 +13,8 @@ export default function Contact(): React.ReactElement {
             Contact
           </h4>
           <p className='max-w-xl text-left text-lg text-muted-foreground leading-relaxed tracking-tight lg:max-w-lg'>
-            Let us know if you have any questions or feedback. We are here to
-            help you.
+            Ready to modernize your optical clinic? Get in touch with us for a demo, 
+            pricing inquiries, or technical support.
           </p>
         </div>
 
@@ -32,10 +32,10 @@ export async function generateMetadata(props: {
 }): Promise<Metadata> {
   const params = await props.params;
   const description =
-    'Contact us for any inquiries, feedback, or support. We are here to assist you.';
+    'Contact Prysm for clinic management solutions, finding a demo, or support for our optical practice software.';
 
   return createMetadata({
-    title: 'Contact',
+    title: 'Contact Prysm',
     description,
     openGraph: {
       url: '/contact',

@@ -40,50 +40,43 @@ const sections = [
     title: 'Overview',
     content: (
       <p>
-        SaasCN is a comprehensive business operations platform that helps
-        organizations streamline their workflows and processes. By using our
-        platform, you agree to these terms.
+        Prysm is a desktop-based optical clinic management system. By downloading, installing, 
+        or using our software, you agree to these terms. These terms constitute a binding legal agreement 
+        between you (either an individual or an entity) and Prysm.
       </p>
     ),
   },
   {
-    title: 'Service Description',
+    title: 'Software License',
     content: (
       <div className='space-y-8'>
         <div>
           <h3 className='mb-3 font-medium text-card-foreground text-xl'>
-            Platform Services
+            Grant of License
           </h3>
           <ul className='ml-4 list-disc space-y-2'>
             <li>
-              Our platform provides tools for workflow automation, analytics,
-              and business process management.
+              We grant you a non-exclusive, non-transferable license to use the Prysm desktop application 
+              for your internal business operations.
             </li>
             <li>
-              We offer various features including team collaboration, reporting,
-              and third-party integrations.
+              The license is granted on a per-clinic usage basis, subject to your subscription plan.
             </li>
             <li>
-              The service is provided under standard business terms and
-              conditions.
+              You may not reverse engineer, decompile, or disassemble the software.
             </li>
           </ul>
         </div>
         <div>
           <h3 className='mb-3 font-medium text-card-foreground text-xl'>
-            Third-Party Integrations
+            Cloud Services
           </h3>
           <ul className='ml-4 list-disc space-y-2'>
             <li>
-              Our platform integrates with various third-party services for
-              enhanced functionality.
+              Prysm provides cloud synchronization services to enable multi-clinic functionality.
             </li>
             <li>
-              Users must comply with the terms of service of any integrated
-              third-party services.
-            </li>
-            <li>
-              We are not responsible for disruptions in third-party services.
+              We reserve the right to suspend these services in case of non-payment or violation of terms.
             </li>
           </ul>
         </div>
@@ -91,44 +84,39 @@ const sections = [
     ),
   },
   {
-    title: 'User Responsibilities',
+    title: 'User Obligations',
     content: (
       <div className='mt-4 space-y-3 text-muted-foreground'>
-        <p>By using our platform, you agree to:</p>
+        <p>As a user of Prysm, you agree to:</p>
         <ul className='ml-4 list-disc space-y-2'>
-          <li>Comply with all applicable laws and regulations.</li>
-          <li>Maintain the security of your account credentials.</li>
-          <li>Use the platform for legitimate business purposes only.</li>
-          <li>Respect intellectual property rights and data privacy.</li>
-          <li>Report any security or technical issues promptly.</li>
+          <li>Maintain the confidentiality of your authentication credentials.</li>
+          <li>Ensure that your hardware meets the minimum system requirements.</li>
+          <li>Use the software in compliance with all applicable healthcare regulations.</li>
+          <li>Regularly backup your local data unless using our cloud backup service.</li>
         </ul>
       </div>
     ),
   },
   {
-    title: 'Service Terms',
+    title: 'Intellectual Property',
     content: (
       <div className='mt-4 space-y-3 text-muted-foreground'>
-        <p>Our service terms include:</p>
-        <ul className='ml-4 list-disc space-y-2'>
-          <li>Fair usage policies for all platform features.</li>
-          <li>Standard service level agreements (SLAs).</li>
-          <li>Regular maintenance and update schedules.</li>
-        </ul>
+        <p>
+          The Prysm software, including its code, design, and documentation, is the exclusive property of Prysm 
+          and is protected by copyright and intellectual property laws.
+        </p>
       </div>
     ),
   },
   {
-    title: 'Data Policies',
+    title: 'Limitation of Liability',
     content: (
       <div className='mt-4 space-y-3 text-muted-foreground'>
-        <p>Our data handling policies ensure:</p>
-        <ul className='ml-4 list-disc space-y-2'>
-          <li>Secure processing and storage of business data.</li>
-          <li>Compliance with data protection regulations.</li>
-          <li>Regular backups and data recovery procedures.</li>
-          <li>Clear data retention and deletion policies.</li>
-        </ul>
+        <p>
+          To the maximum extent permitted by law, Prysm shall not be liable for any indirect, incidental, 
+          or consequential damages arising from the use or inability to use the software, including but not 
+          limited to loss of business profits or data.
+        </p>
       </div>
     ),
   },
@@ -137,16 +125,16 @@ const sections = [
     content: (
       <div className='mt-4 space-y-3 text-muted-foreground'>
         <p>
-          For any questions or concerns regarding these terms, please reach out
-          through our support channels:
+          For any questions or concerns regarding these terms, please contact us at:
         </p>
         <div className='flex flex-col space-y-2'>
-          <Link
-            href='/contact'
+          <a
+            href='mailto:danielbenassaya2626@gmail.com'
             className='inline-flex items-center text-fd-primary underline duration-300 hover:text-fd-primary/70'
           >
-            Contact Support
-          </Link>
+            danielbenassaya2626@gmail.com
+          </a>
+          <span className='text-sm'>+972-58-433-5665</span>
         </div>
       </div>
     ),

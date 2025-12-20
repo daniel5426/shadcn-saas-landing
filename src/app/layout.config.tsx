@@ -2,16 +2,16 @@ import { Icons } from '@/components/icons/icons';
 import type { LinkItemType } from 'fumadocs-ui/layouts/links';
 import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
 
-export const title = 'SaasCN';
+export const title = 'Prysm';
 export const description =
-  'A powerful platform to streamline your business operations.';
-export const owner = 'SaasCN';
+  'Intelligent Optical Clinic Management, Simplified. A comprehensive multi-clinic management system designed specifically for optical clinics.';
+export const owner = 'Prysm';
 
 export const baseOptions: BaseLayoutProps = {
   nav: {
     title,
   },
-  githubUrl: 'https://github.com/techwithanirudh/shadcn-saas-landing',
+  // githubUrl: 'https://github.com/techwithanirudh/shadcn-saas-landing',
 };
 
 export const linkItems: LinkItemType[] = [

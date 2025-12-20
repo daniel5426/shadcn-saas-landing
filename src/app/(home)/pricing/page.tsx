@@ -22,6 +22,12 @@ export default function PricingPage() {
   const [selectedFrequency, setSelectedFrequency] = useState('monthly');
 
   return (
+    <div className='flex h-screen items-center justify-center'>
+      not yet decided, will come soon.
+    </div>
+  )
+
+  return (
     <>
       <title>Pricing | SaasCN</title>
       <meta name='description' content={description} />

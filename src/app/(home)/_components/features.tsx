@@ -4,8 +4,10 @@ import { Section } from '@/components/section';
 import { cva } from 'class-variance-authority';
 import {
   BarChart3 as BarChartIcon,
-  HandCoins as HandCoinsIcon,
   Boxes as IntegrationsIcon,
+  Brain as BrainIcon,
+  Eye as EyeIcon,
+  HandCoins as HandCoinsIcon,
   Users as UsersIcon,
 } from 'lucide-react';
 
@@ -28,34 +30,34 @@ const featureItemVariants = cva(
 const features = [
   {
     id: 1,
-    Icon: HandCoinsIcon,
-    title: 'Cost-Effective Solutions',
+    Icon: IntegrationsIcon,
+    title: 'Multi-Clinic Architecture',
     description:
-      'Maximize ROI with our affordable business automation solutions that scale with your needs.',
+      'Company-wide management with clinic isolation, role-based access control, and secure data separation.',
     size: 'lg',
   },
   {
     id: 2,
-    Icon: BarChartIcon,
-    title: 'Advanced Analytics',
+    Icon: UsersIcon,
+    title: 'Client Management',
     description:
-      'Get deep insights into your business performance with comprehensive analytics and reporting tools.',
+      'Comprehensive client database with family relationships, referral tracking, and medical history.',
     size: 'sm',
   },
   {
     id: 3,
-    Icon: UsersIcon,
-    title: 'Team Collaboration',
+    Icon: EyeIcon,
+    title: 'Advanced Eye Exams',
     description:
-      'Work seamlessly with your team through integrated collaboration features and real-time updates.',
+      'Customizable exam components (subjective, objective, etc.) with unified data storage and prescription management.',
     size: 'sm',
   },
   {
     id: 4,
-    Icon: IntegrationsIcon,
-    title: 'Easy Integration',
+    Icon: BrainIcon,
+    title: 'AI-Powered Assistant',
     description:
-      'Connect with your favorite tools and services through our extensive integration ecosystem.',
+      'Intelligent operations assistant for natural language queries, appointment management, and medical insights.',
     size: 'lg',
   },
 ];
@@ -65,11 +67,10 @@ const Features = () => (
     <div className='flex flex-col gap-10'>
       <div className='flex flex-col gap-2 px-6'>
         <h2 className='max-w-xl text-left font-regular text-3xl tracking-tighter md:text-5xl'>
-          Why SaasCN?
+          Why Prysm?
         </h2>
         <p className='max-w-xl text-left text-lg text-muted-foreground leading-relaxed tracking-tight lg:max-w-lg'>
-          Powerful features to help your business succeed in today's competitive
-          landscape.
+          Powerful features designed to modernize your optical clinic operations and improve patient care.
         </p>
       </div>
 

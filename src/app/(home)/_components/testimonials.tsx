@@ -13,39 +13,39 @@ import { useEffect, useState } from 'react';
 
 const testimonials = [
   {
-    title: 'Transformed our workflow',
+    title: 'Streamlined our clinic',
     description:
-      'SaasCN has completely revolutionized how we handle our business processes. The automation features alone have saved us countless hours.',
+      'Prysm has completely revolutionized how we handle our patient exams and billing. The interface is intuitive and fast.',
     author: {
-      name: 'Hayden Bleasel',
-      image: 'https://github.com/haydenbleasel.png',
+      name: 'Dr. Sarah Cohen',
+      image: 'https://github.com/shadcn.png', // Placeholder
     },
   },
   {
-    title: 'Enterprise-grade solution',
+    title: 'Perfect for multi-location',
     description:
-      'The platform offers enterprise-level features while maintaining an intuitive interface. Perfect for scaling organizations.',
+      'Managing three clinics was a nightmare until we switched to Prysm. The centralized control is exactly what we needed.',
     author: {
-      name: 'Lee Robinson',
-      image: 'https://github.com/leerob.png',
+      name: 'David Levy',
+      image: 'https://github.com/leerob.png', // Placeholder
     },
   },
   {
-    title: 'Exceptional integration',
+    title: 'Best eye exam module',
     description:
-      'The ease of integration with our existing tools was impressive. It fits perfectly into our tech stack.',
+      'The eye examination features are incredibly detailed and customizable. It fits perfectly with our optometrists workflow.',
     author: {
-      name: 'shadcn',
-      image: 'https://github.com/shadcn.png',
+      name: 'Rachel B.',
+      image: 'https://github.com/haydenbleasel.png', // Placeholder
     },
   },
   {
     title: 'Outstanding support',
     description:
-      'Their customer support team goes above and beyond. Any questions we had were answered promptly and thoroughly.',
+      'The support team helped us migrate all our old patient data seamlessly. Highly recommended!',
     author: {
-      name: 'Pontus Abrahamsson',
-      image: 'https://github.com/pontusab.png',
+      name: 'Michael Chen',
+      image: 'https://github.com/pontusab.png', // Placeholder
     },
   },
 ];
@@ -75,10 +75,10 @@ const Testimonials = () => {
       <div className='flex flex-col gap-10'>
         <div className='flex flex-col gap-2 px-6'>
           <h2 className='max-w-xl text-left font-regular text-3xl tracking-tighter md:text-5xl'>
-            Loved by the community
+            Trusted by Professionals
           </h2>
           <p className='max-w-xl text-left text-lg text-muted-foreground leading-relaxed tracking-tight lg:max-w-lg'>
-            See what others are saying about SaasCN.
+            See what optical clinic managers and optometrists are saying about Prysm.
           </p>
         </div>
 

@@ -46,60 +46,68 @@ const sections = [
     title: 'Our Commitment to Privacy',
     content: (
       <p>
-        We take your privacy seriously. Our platform is designed to provide a
-        secure environment where your business data is protected at all times.
+        Prysm is committed to protecting the privacy and confidentiality of patient health information. 
+        As a desktop application designed for optical clinics, we implement robust security measures 
+        to safeguard sensitive medical data in accordance with healthcare privacy standards.
       </p>
     ),
   },
   {
-    title: 'Data Collection and Usage',
+    title: 'Data Collection and Storage',
     content: (
       <ul className='ml-4 list-disc space-y-2'>
         <li>
-          We collect essential information to provide and improve our services,
-          including account details and usage patterns.
+          Patient records, exam results, and medical history are stored locally on your system 
+          and synchronized securely across your clinic network.
         </li>
         <li>
-          Business data is processed securely and never shared with third
-          parties without explicit consent.
+          We collect only essential information needed to provide clinic management services, 
+          including patient demographics, examination data, and billing information.
         </li>
         <li>
-          Analytics data is used to improve platform performance and user
-          experience.
+          All patient health information is encrypted both in transit and at rest using 
+          industry-standard encryption protocols.
+        </li>
+        <li>
+          Authentication data (Google OAuth) is handled securely and never stored locally.
         </li>
       </ul>
+    ),
+  },
+  {
+    title: 'Healthcare Data Protection',
+    content: (
+      <div className='space-y-2'>
+        <p>
+          Prysm is designed with healthcare privacy regulations in mind:
+        </p>
+        <ul className='ml-4 list-disc space-y-2'>
+          <li>Patient data is segregated by clinic with role-based access control.</li>
+          <li>Audit logs track all access to patient records for compliance purposes.</li>
+          <li>Data is never shared with third parties without explicit authorization.</li>
+          <li>Backup and recovery procedures ensure data integrity and availability.</li>
+        </ul>
+      </div>
     ),
   },
   {
     title: 'Third-Party Services',
     content: (
       <p>
-        Our platform may integrate with third-party services for analytics,
-        payment processing, and other business functions. These services comply
-        with industry standards for data security.
+        Prysm uses limited third-party services including Google OAuth for authentication 
+        and OpenAI for AI-assisted features. These services are configured to minimize 
+        exposure of protected health information and comply with applicable privacy standards.
       </p>
-    ),
-  },
-  {
-    title: 'Data Security',
-    content: (
-      <ul className='ml-4 list-disc space-y-2'>
-        <li>All data is encrypted in transit and at rest.</li>
-        <li>We implement regular security audits and penetration testing.</li>
-        <li>
-          Our infrastructure adheres to industry best practices for data
-          protection.
-        </li>
-      </ul>
     ),
   },
   {
     title: 'Your Rights and Controls',
     content: (
       <ul className='ml-4 list-disc space-y-2'>
-        <li>Access and export your data at any time.</li>
-        <li>Control your privacy settings and integration permissions.</li>
-        <li>Request data deletion upon account closure.</li>
+        <li>Access, modify, and export patient data at any time through the application.</li>
+        <li>Control user permissions and access levels for staff members.</li>
+        <li>Request complete data deletion upon termination of service.</li>
+        <li>Configure data retention policies to meet your regulatory requirements.</li>
       </ul>
     ),
   },
@@ -107,8 +115,11 @@ const sections = [
     title: 'Contact Us',
     content: (
       <p>
-        If you have any questions about your privacy or how we handle your data,
-        please contact us through our official support channels.
+        For questions about data privacy or security, please contact us at{' '}
+        <a href='mailto:danielbenassaya2626@gmail.com' className='text-fd-primary underline'>
+          danielbenassaya2626@gmail.com
+        </a>
+        {' '}or call +972-58-433-5665.
       </p>
     ),
   },
@@ -116,8 +127,8 @@ const sections = [
     title: 'Updates to This Policy',
     content: (
       <p>
-        We may update this privacy policy periodically. Users will be notified
-        of any significant changes through the platform.
+        We may update this privacy policy to reflect changes in our practices or legal requirements. 
+        Users will be notified of significant changes through the application or via email.
       </p>
     ),
   },

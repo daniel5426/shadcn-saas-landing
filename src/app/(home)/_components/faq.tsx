@@ -9,29 +9,29 @@ import {
 
 const faq = [
   {
-    question: 'What is SaasCN?',
+    question: 'What is Prysm?',
     answer:
-      'SaasCN is a comprehensive business operations platform that helps companies streamline their workflows, automate processes, and scale efficiently. Our solutions are designed for businesses of all sizes.',
+      'Prysm is a comprehensive multi-clinic management system designed specifically for optical clinics. It is a desktop application that combines patient management, eye exams, inventory, and billing in one unified platform.',
   },
   {
-    question: 'How secure is the platform?',
+    question: 'Is Prysm cloud-based or on-premise?',
     answer:
-      'We implement enterprise-grade security measures, including end-to-end encryption, regular security audits, and compliance with industry standards. Your data security is our top priority.',
+      'Prysm is a modern desktop application (Electron) that offers the best of both worlds: the performance and offline capabilities of desktop software, with secure cloud synchronization for multi-clinic management.',
   },
   {
-    question: 'Can I integrate with other tools?',
+    question: 'Can I manage multiple clinic locations?',
     answer:
-      'Yes! SaasCN offers extensive integration capabilities with popular business tools and services. Our API and webhook system allows for seamless connection with your existing tech stack.',
+      'Yes! Prysm is built with multi-clinic architecture at its core. You can manage multiple locations, assign role-based access to staff, and view company-wide reports from a central dashboard.',
   },
   {
-    question: 'How does pricing work?',
+    question: 'Is my patient data secure?',
     answer:
-      'We offer flexible pricing tiers designed to scale with your business needs, from starter plans for small teams to enterprise solutions for large organizations. Check our pricing page for detailed information.',
+      'Absolutely. We use industry-standard encryption, secure authentication (Google OAuth), and role-based access control to ensure your patient data is protected and private.',
   },
   {
-    question: 'What kind of support do you provide?',
+    question: 'Can I migrate data from my current software?',
     answer:
-      'Our dedicated support team is available 24/7 through multiple channels including live chat, email, and phone. We also provide extensive documentation and training resources.',
+      'Yes, we offer data migration services to help you move your existing patient records, history, and inventory into Prysm seamlessly.',
   },
 ];
 

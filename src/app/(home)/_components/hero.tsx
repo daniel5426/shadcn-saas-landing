@@ -45,14 +45,12 @@ const Hero = ({ posts }: { posts: Page[] }) => (
       </Button>
       <div className='flex flex-col gap-4'>
         <h1 className='max-w-2xl text-center font-regular text-5xl tracking-tighter md:text-7xl'>
-          The Future of
+          Intelligent Optical
           <br />
-          Business Starts Here
+          Clinic Management
         </h1>
         <p className='max-w-2xl text-center text-lg text-muted-foreground leading-relaxed tracking-tight md:text-xl'>
-          Say goodbye to manual workflows and inefficient processes. SaasCN
-          streamlines your business operations, making work intuitive,
-          efficient, and tailored to your needs.
+          Prysm is a comprehensive multi-clinic management system designed specifically for optical professionals. Streamline operations, manage clients, and boost efficiency with our modern desktop application.
         </p>
       </div>
       <div className='flex flex-row gap-3'>
@@ -69,7 +67,7 @@ const Hero = ({ posts }: { posts: Page[] }) => (
         </Button>
         <Button size='lg' className='group gap-4' asChild>
           <Link href={env.NEXT_PUBLIC_APP_URL}>
-            Sign up{' '}
+            Request Demo{' '}
             <Icons.arrowUpRight className='group-hover:-rotate-12 size-4 transition-transform' />
           </Link>
         </Button>
