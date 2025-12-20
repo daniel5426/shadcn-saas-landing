@@ -8,7 +8,7 @@ export function createMetadata(override: Metadata): Metadata {
       description: override.description ?? undefined,
       url: 'https://saas-landing.techwithanirudh.com',
       images: '/banner.png',
-      siteName: 'SaasCN',
+      siteName: 'Prysm',
       ...override.openGraph,
     },
     twitter: {

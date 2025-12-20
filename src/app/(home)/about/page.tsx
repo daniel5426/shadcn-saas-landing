@@ -15,9 +15,6 @@ export default function AboutPage() {
       <Separator />
       <About />
       <Separator />
-      <Team />
-      <Separator />
-      <Updates posts={posts} />
       <CTA />
     </>
   );

@@ -58,33 +58,7 @@ export function Footer() {
           </ul>
         </div>
 
-        <div className='flex flex-col gap-6'>
-          <p className='font-medium text-foreground'>Posts</p>
 
-          <ul className='flex flex-col gap-3'>
-            {posts.slice(0, postsPerPage).map((post, i) => (
-              <li key={post.url}>
-                <ActiveLink key={i.toString()} href={post.url}>
-                  {post.data.title}
-                </ActiveLink>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div className='flex flex-col gap-6'>
-          <p className='font-medium text-foreground'>Tags</p>
-
-          <ul className='flex flex-col gap-3'>
-            {tags.slice(0, postsPerPage).map((name, i) => (
-              <li key={`/tags/${name}`}>
-                <ActiveLink key={i.toString()} href={`/tags/${name}`}>
-                  <span className='capitalize'>{name}</span>
-                </ActiveLink>
-              </li>
-            ))}
-          </ul>
-        </div>
 
         <div className='flex flex-col gap-6'>
           <p className='font-medium text-foreground'>Socials</p>

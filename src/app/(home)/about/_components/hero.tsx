@@ -15,12 +15,12 @@ const Hero = () => (
           className='transition-transform hover:scale-110'
         />
         <h1 className='max-w-2xl bg-gradient-to-b bg-opacity-50 from-foreground to-muted-foreground/70 bg-clip-text font-regular text-4xl text-transparent tracking-tighter sm:text-6xl md:text-7xl'>
-          <Balancer>Building the modern BizOps platform</Balancer>
+          <Balancer>Building the future of optical clinics era</Balancer>
         </h1>
         <p className='mx-auto max-w-2xl text-lg text-muted-foreground/90 md:text-xl'>
           <Balancer>
-            Technology has come a long way, and we're here to revolutionize how
-            businesses operate.
+            optical clinics have been around for a long time, but they have not
+            changed much. We are here to change that.
           </Balancer>
         </p>
       </div>
