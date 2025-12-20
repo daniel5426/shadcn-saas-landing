@@ -38,10 +38,10 @@ const Hero = ({ posts }: { posts: Page[] }) => (
         className='group gap-4 bg-muted/70'
         asChild
       >
-        <Link href={`/blog/${posts?.[0]?.slugs?.join('/')}`}>
+        {/* <Link href={`/blog/${posts?.[0]?.slugs?.join('/')}`}> 
           Read our latest announcement
           <Icons.arrowUpRight className='group-hover:-rotate-12 size-4 transition-transform' />
-        </Link>
+        </Link> */}
       </Button>
       <div className='flex flex-col gap-4'>
         <h1 className='max-w-2xl text-center font-regular text-5xl tracking-tighter md:text-7xl'>
