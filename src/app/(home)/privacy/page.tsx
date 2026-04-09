@@ -4,7 +4,7 @@ import { Section } from '@/components/section';
 import { createMetadata } from '@/lib/metadata';
 import type { Metadata } from 'next';
 
-const LAST_UPDATED = 'March 2, 2025';
+const LAST_UPDATED = 'April 9, 2026';
 
 export default function PrivacyPolicy() {
   return (
@@ -43,83 +43,169 @@ export default function PrivacyPolicy() {
 
 const sections = [
   {
-    title: 'Our Commitment to Privacy',
+    title: 'Overview',
     content: (
       <p>
-        Prysm is committed to protecting the privacy and confidentiality of patient health information. 
-        As a desktop application designed for optical clinics, we implement robust security measures 
-        to safeguard sensitive medical data in accordance with healthcare privacy standards.
+        OpticAI is a desktop application for optical clinics. This policy
+        explains what data we access, how we use it, how long we keep it, and
+        how users can request deletion. For Google integrations, we access only
+        the Google data needed to authenticate the user and sync calendar events
+        that the user chooses to manage through the app.
       </p>
     ),
   },
   {
-    title: 'Data Collection and Storage',
+    title: 'Data Accessed',
     content: (
       <ul className='ml-4 list-disc space-y-2'>
         <li>
-          Patient records, exam results, and medical history are stored locally on your system 
-          and synchronized securely across your clinic network.
+          Google account email address, and in some cases basic profile details
+          returned by Google during OAuth sign-in, such as name and profile
+          image.
         </li>
         <li>
-          We collect only essential information needed to provide clinic management services, 
-          including patient demographics, examination data, and billing information.
+          Google OAuth credentials required to maintain the connection,
+          including access tokens and refresh tokens.
         </li>
         <li>
-          All patient health information is encrypted both in transit and at rest using 
-          industry-standard encryption protocols.
+          Google Calendar data needed for the features you enable, including
+          calendar events and event metadata.
         </li>
         <li>
-          Authentication data (Google OAuth) is handled securely and never stored locally.
+          When a user syncs appointments to Google Calendar, event details may
+          include the appointment title, date, time, duration, notes, and, if
+          the clinic chooses, attendee details such as the client name and email
+          address.
         </li>
       </ul>
     ),
   },
   {
-    title: 'Healthcare Data Protection',
+    title: 'Google Scopes Used',
     content: (
-      <div className='space-y-2'>
-        <p>
-          Prysm is designed with healthcare privacy regulations in mind:
-        </p>
+      <div className='space-y-3'>
+        <p>OpticAI currently uses the following Google OAuth scopes:</p>
         <ul className='ml-4 list-disc space-y-2'>
-          <li>Patient data is segregated by clinic with role-based access control.</li>
-          <li>Audit logs track all access to patient records for compliance purposes.</li>
-          <li>Data is never shared with third parties without explicit authorization.</li>
-          <li>Backup and recovery procedures ensure data integrity and availability.</li>
+          <li>
+            <code>https://www.googleapis.com/auth/calendar</code>
+          </li>
+          <li>
+            <code>https://www.googleapis.com/auth/calendar.events</code>
+          </li>
+          <li>
+            <code>https://www.googleapis.com/auth/userinfo.email</code>
+          </li>
         </ul>
       </div>
     ),
   },
   {
-    title: 'Third-Party Services',
-    content: (
-      <p>
-        Prysm uses limited third-party services including Google OAuth for authentication 
-        and OpenAI for AI-assisted features. These services are configured to minimize 
-        exposure of protected health information and comply with applicable privacy standards.
-      </p>
-    ),
-  },
-  {
-    title: 'Your Rights and Controls',
+    title: 'Data Usage',
     content: (
       <ul className='ml-4 list-disc space-y-2'>
-        <li>Access, modify, and export patient data at any time through the application.</li>
-        <li>Control user permissions and access levels for staff members.</li>
-        <li>Request complete data deletion upon termination of service.</li>
-        <li>Configure data retention policies to meet your regulatory requirements.</li>
+        <li>Authenticate users and link their Google account to OpticAI.</li>
+        <li>
+          Create, update, delete, and read Google Calendar events requested by
+          the user.
+        </li>
+        <li>
+          Associate synced Google Calendar events with appointments inside the
+          app so the clinic can manage scheduling workflows.
+        </li>
+        <li>
+          Maintain the connection so the user does not need to reconnect every
+          session.
+        </li>
       </ul>
     ),
   },
   {
-    title: 'Contact Us',
+    title: 'Data Sharing',
+    content: (
+      <ul className='ml-4 list-disc space-y-2'>
+        <li>
+          We do not sell Google user data and we do not use Google user data for
+          advertising.
+        </li>
+        <li>
+          Google user data is shared with Google only as required to provide the
+          authorized Google Calendar and account-linking features.
+        </li>
+        <li>
+          We do not share Google user data with third parties except service
+          providers acting on our behalf where necessary to operate the service,
+          comply with the law, or protect rights and security.
+        </li>
+      </ul>
+    ),
+  },
+  {
+    title: 'Data Storage and Protection',
+    content: (
+      <ul className='ml-4 list-disc space-y-2'>
+        <li>
+          Google data is stored only to the extent needed to provide the
+          integration, including linked Google account email, OAuth tokens, and
+          related calendar sync references.
+        </li>
+        <li>
+          We use reasonable technical and organizational safeguards to protect
+          data in transit and at rest and to limit access to authorized
+          personnel and systems.
+        </li>
+        <li>
+          Access to connected Google data is limited to the functions requested
+          by the user inside OpticAI.
+        </li>
+      </ul>
+    ),
+  },
+  {
+    title: 'Data Retention and Deletion',
+    content: (
+      <div className='space-y-3'>
+        <p>
+          We retain Google user data only for as long as needed to provide the
+          requested integration and maintain the user’s connected account,
+          unless a longer period is required by law.
+        </p>
+        <ul className='ml-4 list-disc space-y-2'>
+          <li>
+            Linked Google account details, OAuth tokens, and related calendar
+            sync references are kept while the integration remains active.
+          </li>
+          <li>
+            Users may request deletion of their Google-connected data by
+            contacting us at{' '}
+            <a
+              href='mailto:danielbenassaya2626@gmail.com'
+              className='text-fd-primary underline'
+            >
+              danielbenassaya2626@gmail.com
+            </a>
+            .
+          </li>
+          <li>
+            Users may also request that their Google integration be
+            disconnected, after which future Google Calendar syncing will stop.
+          </li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    title: 'Your Rights and Contact',
     content: (
       <p>
-        For questions about data privacy or security, please contact us at{' '}
-        <a href='mailto:danielbenassaya2626@gmail.com' className='text-fd-primary underline'>
+        If you have questions about this policy, want to request access or
+        deletion, or need help with your Google-connected data, contact{' '}
+        <a
+          href='mailto:danielbenassaya2626@gmail.com'
+          className='text-fd-primary underline'
+        >
           danielbenassaya2626@gmail.com
-        </a>
-        {' '}or call +972-58-433-5665.
+        </a>{' '}
+        or call +972-58-433-5665.
       </p>
     ),
   },
@@ -127,8 +213,8 @@ const sections = [
     title: 'Updates to This Policy',
     content: (
       <p>
-        We may update this privacy policy to reflect changes in our practices or legal requirements. 
-        Users will be notified of significant changes through the application or via email.
+        We may update this policy from time to time. Material changes will be
+        reflected on this page by updating the effective date above.
       </p>
     ),
   },
