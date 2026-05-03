@@ -32,25 +32,16 @@ const Hero = ({ posts }: { posts: Page[] }) => (
       />
     </motion.div>
     <div className='mx-auto flex flex-col items-center justify-center gap-8'>
-      <Button
-        variant='outline'
-        size='sm'
-        className='group gap-4 bg-muted/70'
-        asChild
-      >
-        {/* <Link href={`/blog/${posts?.[0]?.slugs?.join('/')}`}> 
-          Read our latest announcement
-          <Icons.arrowUpRight className='group-hover:-rotate-12 size-4 transition-transform' />
-        </Link> */}
-      </Button>
       <div className='flex flex-col gap-4'>
         <h1 className='max-w-2xl text-center font-regular text-5xl tracking-tighter md:text-7xl'>
-          Intelligent Optical
+          The Operating System
           <br />
-          Clinic Management
+          for Optical Clinics
         </h1>
         <p className='max-w-2xl text-center text-lg text-muted-foreground leading-relaxed tracking-tight md:text-xl'>
-          Prysm is a comprehensive multi-clinic management system designed specifically for optical professionals. Streamline operations, manage clients, and boost efficiency with our modern desktop application.
+          Prysm is a desktop application that brings scheduling, client records,
+          clinical exams, orders, referrals, and multi-clinic management into one
+          connected workspace — built specifically for optical professionals.
         </p>
       </div>
       <div className='flex flex-row gap-3'>
@@ -72,6 +63,25 @@ const Hero = ({ posts }: { posts: Page[] }) => (
           </Link>
         </Button>
       </div>
+
+      {/* App Preview Screenshot */}
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, delay: 0.3, ease: 'easeOut' }}
+        className='mt-4 w-full max-w-4xl'
+      >
+        <div className='screenshot-frame'>
+          <Image
+            src='/opticai-landingpage-screenshot/client-detail.png'
+            alt='Prysm — Client details workspace showing personal information, contact details, family management, and clinical notes'
+            width={1400}
+            height={900}
+            className='w-full'
+            priority
+          />
+        </div>
+      </motion.div>
     </div>
   </Section>
 );

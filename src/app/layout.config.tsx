@@ -1,4 +1,5 @@
 import { Icons } from '@/components/icons/icons';
+import { Download } from 'lucide-react';
 import type { LinkItemType } from 'fumadocs-ui/layouts/links';
 import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
 
@@ -25,6 +26,12 @@ export const linkItems: LinkItemType[] = [
     icon: <Icons.pricing />,
     text: 'Pricing',
     url: '/pricing',
+    active: 'url',
+  },
+  {
+    icon: <Download className='size-4' />,
+    text: 'Download',
+    url: '/download',
     active: 'url',
   },
   {

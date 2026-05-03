@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
+  "engines": {
+    "node": "20.x",
+    "pnpm": "10.7.0"
+  },
   "scripts": {
     "postinstall": "fumadocs-mdx",
     "build": "next build",

@@ -5,7 +5,7 @@ import CTA from './_components/cta';
 
 import { FAQ } from './_components/faq';
 import Features from './_components/features';
-import Testimonials from './_components/testimonials';
+import Showcase from './_components/showcase';
 
 export default function Home() {
   const posts = getSortedByDatePosts().slice(0, 3);
@@ -17,7 +17,7 @@ export default function Home() {
       <Separator />
       <Features />
       <Separator />
-      <Testimonials />
+      <Showcase />
       <Separator />
       <FAQ />
       <Separator />

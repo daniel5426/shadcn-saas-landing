@@ -1,94 +1,89 @@
 'use client';
 
 import { Section } from '@/components/section';
-import { cva } from 'class-variance-authority';
 import {
-  BarChart3 as BarChartIcon,
-  Boxes as IntegrationsIcon,
-  Brain as BrainIcon,
+  Building2 as BuildingIcon,
+  CalendarDays as CalendarIcon,
   Eye as EyeIcon,
-  HandCoins as HandCoinsIcon,
+  FileText as FileIcon,
+  Sparkles as SparklesIcon,
   Users as UsersIcon,
 } from 'lucide-react';
 
-// Create a variant for feature items
-const featureItemVariants = cva(
-  'group flex flex-col justify-between gap-10 p-6 last:border-border last:border-b last:border-dashed hover:bg-card hover:bg-card/80 sm:gap-22 md:gap-34 lg:gap-46',
-  {
-    variants: {
-      size: {
-        sm: '',
-        lg: 'lg:col-span-2',
-      },
-    },
-    defaultVariants: {
-      size: 'sm',
-    },
-  },
-);
-
 const features = [
   {
-    id: 1,
-    Icon: IntegrationsIcon,
-    title: 'Multi-Clinic Architecture',
+    Icon: CalendarIcon,
+    title: 'Smart Scheduling',
     description:
-      'Company-wide management with clinic isolation, role-based access control, and secure data separation.',
-    size: 'lg',
+      'Day, week, and month views with staff color-coding, vacation checks, and Google Calendar sync.',
   },
   {
-    id: 2,
     Icon: UsersIcon,
-    title: 'Client Management',
+    title: 'Client & Family CRM',
     description:
-      'Comprehensive client database with family relationships, referral tracking, and medical history.',
-    size: 'sm',
+      'Full client records — contacts, medical history, family groups, notes, and health fund tracking.',
   },
   {
-    id: 3,
     Icon: EyeIcon,
-    title: 'Advanced Eye Exams',
+    title: 'Clinical Exam Engine',
     description:
-      'Customizable exam components (subjective, objective, etc.) with unified data storage and prescription management.',
-    size: 'sm',
+      'Custom layouts with 20+ optometry components, drag-and-drop cards, and prescription management.',
   },
   {
-    id: 4,
-    Icon: BrainIcon,
-    title: 'AI-Powered Assistant',
+    Icon: FileIcon,
+    title: 'Orders & Documents',
     description:
-      'Intelligent operations assistant for natural language queries, appointment management, and medical insights.',
-    size: 'lg',
+      'Glasses and CL order management with supplier details, billing, status tracking, and DOCX exports.',
+  },
+  {
+    Icon: BuildingIcon,
+    title: 'Multi-Clinic Control',
+    description:
+      'Company dashboard with cross-branch analytics, role-based access, and centralized administration.',
+  },
+  {
+    Icon: SparklesIcon,
+    title: 'AI Assistant',
+    description:
+      'Natural language search, appointment management, client summaries, and medical insights.',
   },
 ];
 
 const Features = () => (
-  <Section className='relative w-full pt-10'>
-    <div className='flex flex-col gap-10'>
-      <div className='flex flex-col gap-2 px-6'>
+  <Section className='relative w-full'>
+    <div className='flex flex-col'>
+      {/* Header */}
+      <div className='flex flex-col gap-2 px-6 py-10 md:py-14'>
         <h2 className='max-w-xl text-left font-regular text-3xl tracking-tighter md:text-5xl'>
-          Why Prysm?
+          Everything Your Clinic Needs
         </h2>
-        <p className='max-w-xl text-left text-lg text-muted-foreground leading-relaxed tracking-tight lg:max-w-lg'>
-          Powerful features designed to modernize your optical clinic operations and improve patient care.
+        <p className='max-w-lg text-left text-lg text-muted-foreground leading-relaxed tracking-tight'>
+          One workspace for the daily flow — from the waiting room to the exam chair to the back office.
         </p>
       </div>
 
-      <div className='w-full border-border border-t border-dashed pb-4'>
-        <div className='grid grid-cols-1 divide-x divide-y divide-dashed divide-border text-left sm:grid-cols-2 lg:grid-cols-3'>
-          {features.map((feature) => (
+      {/* Dense Feature Grid */}
+      <div className='border-border border-t border-dashed'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'>
+          {features.map((feature, i) => (
             <div
-              key={feature.id}
-              className={featureItemVariants({
-                size: feature.size as 'sm' | 'lg',
-              })}
+              key={feature.title}
+              className='group relative flex flex-col gap-3 border-border border-b border-dashed p-6 transition-colors hover:bg-muted/40 sm:even:border-l sm:even:border-dashed lg:border-l lg:border-dashed lg:first:border-l-0 lg:[&:nth-child(3n+1)]:border-l-0'
             >
-              <feature.Icon className='h-8 w-8 stroke-1 transition-transform hover:rotate-12 hover:scale-125' />
-              <div className='flex flex-col '>
-                <h3 className='text-xl tracking-tight transition-all'>
+              {/* Index + Icon Row */}
+              <div className='flex items-center justify-between'>
+                <feature.Icon className='size-5 stroke-[1.5] text-foreground/80' />
+                <span className='font-mono text-[10px] tabular-nums text-muted-foreground/60'>
+                  {String(i + 1).padStart(2, '0')}
+                </span>
+              </div>
+
+              {/* Content */}
+              <div className='flex flex-col gap-1'>
+                <h3 className='text-[15px] font-medium tracking-tight'>
                   {feature.title}
                 </h3>
-                <p className='max-w-xs text-base text-muted-foreground transition-all'>
+                <p className='text-[13px] leading-relaxed text-muted-foreground'>
                   {feature.description}
                 </p>
               </div>
@@ -99,4 +94,5 @@ const Features = () => (
     </div>
   </Section>
 );
+
 export default Features;

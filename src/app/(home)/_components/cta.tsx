@@ -9,15 +9,15 @@ export default function CTA(): React.ReactElement {
   return (
     <Section className='relative grid gap-8 px-4 py-10 sm:grid-cols-2 md:py-14 lg:px-6 lg:py-16'>
       <h2 className='max-w-xl font-regular text-3xl md:text-5xl'>
-        Transform Your Optical Clinic with Prysm
+        Ready to Modernize Your Optical Clinic?
       </h2>
 
       <div className='flex w-full items-center'>
         <div className='max-w-xl space-y-4'>
           <p className='text-muted-foreground text-sm md:text-base'>
-            Join forward-thinking optical professionals using Prysm to streamline
-            operations, boost productivity, and improve patient care. Start your journey
-            today.
+            Prysm brings scheduling, exams, orders, and team management into one
+            desktop workspace — purpose-built for optical professionals managing
+            one clinic or many.
           </p>
           <div className='flex flex-row gap-3'>
             <Button size='lg' className='group gap-4' asChild>

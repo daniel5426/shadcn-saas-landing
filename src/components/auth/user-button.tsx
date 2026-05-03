@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 
 import { Icons } from '@/components/icons/icons';
@@ -42,6 +43,13 @@ export interface UserButtonProps {
 export function UserButton({ className, classNames }: UserButtonProps) {
   const { data: sessionData, isPending } = useSession();
   const user = sessionData?.user ?? null;
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const showSkeleton = !mounted || isPending;
 
   return (
     <DropdownMenu>
@@ -53,9 +61,9 @@ export function UserButton({ className, classNames }: UserButtonProps) {
             'bg-secondary hover:bg-secondary/80',
             classNames?.trigger?.base,
           )}
-          disabled={isPending}
+          disabled={showSkeleton}
         >
-          {isPending ? (
+          {showSkeleton ? (
             <Skeleton
               className={cn(
                 'size-8 rounded-md',
