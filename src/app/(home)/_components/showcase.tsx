@@ -57,11 +57,11 @@ const showcaseItems = [
     alt: 'Prysm multi-clinic dashboard showing five optical clinic branches',
     objectPosition: 'object-right-top',
   },
-];
+] as const;
 
 const Showcase = () => {
   const [active, setActive] = useState(0);
-  const current = showcaseItems[active];
+  const current = showcaseItems[active] ?? showcaseItems[0];
 
   return (
     <Section className='relative w-full'>
